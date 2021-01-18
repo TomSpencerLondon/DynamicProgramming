@@ -37,4 +37,16 @@ public class Fibonacci {
 
     return cache[n];
   }
+
+  public static long optimizedBottomUp(long n){
+    if (n < 2) return n;
+    long n1 = 1, n2 = 0;
+    for (int i = 2; i < n; i++){
+      long n0 = n1 + n2;
+      n2 = n1;
+      n1 = n0;
+    }
+
+    return n1 + n2;
+  }
 }
