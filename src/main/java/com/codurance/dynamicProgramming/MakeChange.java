@@ -1,7 +1,7 @@
 package com.codurance.dynamicProgramming;
 
 public class MakeChange {
-  private static int[] coins = new int[]{1, 5, 10, 25};
+  private static int[] coins = new int[]{25, 10, 5, 1};
 
   public static int makeChange(int c){
     if (c == 0) return 0;
